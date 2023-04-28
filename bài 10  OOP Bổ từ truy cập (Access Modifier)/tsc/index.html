@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    
+   <div class="container">
+    <h2>Danh sách sinh viên</h2>
+    <hr>
+    
+    <form action="" method="POST" class="form-inline" role="form">
+        <div class="form-group">
+            <label class="sr-only" for="">label</label>
+            <input type="number" class="form-control" id="diem" placeholder="Input field">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="loc_diem()">Lọc điểm</button>
+
+        <div class="form-group">
+            
+            <select name="" id="sap_xep" class="form-control" required="required" onchange="sap_xep_theo_diem(this)">
+                <option value="">Mặc định</option>
+                <option value="tang">Điểm Tăng dần</option>
+                <option value="giam">Điểm Giảm dần</option>
+            </select>
+            
+        </div>
+    </form>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã</th>
+                <th>Họ tên</th>
+                <th>Toán</th>
+                <th>Lý</th>
+                <th>Hóa</th>
+                <th>Điểm TB</th>
+                <th>Xếp loại</th>
+            </tr>
+        </thead>
+        <tbody id="tbody-list">
+          <!-- danh sách sẽ đc in từ mã javascript thì phải cần a id -->
+        </tbody>
+    </table>
+   </div>
+    
+    <script src="dist/typescript.js"></script>
+</body>
+</html>

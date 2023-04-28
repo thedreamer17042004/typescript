@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "System", //=> là module nền để chỉ cho ts bt toi phải biên dịch thông qua module này
+    "target": "ES6", //=> để module biên dịch về es6 . chỉ định loại phiên bản ngôn ngữ js sẽ đc biên dịch
+    "rootDir": "./typescript", // => ./typescript là tên thư mục chứa file nhiều ts
+    "outDir": "./dist", // thư mục chứa file js đã biên dịch
+    "removeComments": true
+  }
+}
